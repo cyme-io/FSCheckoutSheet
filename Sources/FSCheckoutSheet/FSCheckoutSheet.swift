@@ -153,7 +153,7 @@ public final class FastSpringCheckoutVC: NSViewController {
     
     let buttonStack = NSStackView(views: [
       NSButton(title  : "Dismiss", // TODO: Loc
-               target : nil, action: #selector(cancelOperation(_:)))
+               target : self, action: #selector(cancelOperation(_:)))
     ])
     buttonStack.orientation = .horizontal
     buttonStack.alignment   = .firstBaseline
