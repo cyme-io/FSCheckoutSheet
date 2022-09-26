@@ -152,6 +152,7 @@ public final class FastSpringCheckoutVC: NSViewController {
     webView.navigationDelegate = self
     
     let buttonStack = NSStackView(views: [
+
       NSButton(title  : NSLocalizedString("Dismiss", comment: "Dismiss Button Caption"),
                target : nil, action: #selector(cancelOperation(_:)))
     ])
